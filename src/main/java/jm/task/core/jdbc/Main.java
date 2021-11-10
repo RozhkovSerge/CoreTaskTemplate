@@ -11,10 +11,10 @@ public class Main {
 //        userService.dropUsersTable();
 
         userService.saveUser("Oleg", "Sedov", (byte) 23);
-//        userService.saveUser("Ivan", "Petrov", (byte) 32);
-//        userService.saveUser("Sergey", "Ivanov", (byte) 31);
-//        userService.saveUser("Anton", "Smirnov", (byte) 44);
-//        userService.getAllUsers();
+        userService.saveUser("Ivan", "Petrov", (byte) 32);
+        userService.saveUser("Sergey", "Ivanov", (byte) 31);
+        userService.saveUser("Anton", "Smirnov", (byte) 44);
+        userService.getAllUsers();
 //
 //        System.out.println(userService.getAllUsers());
 //
