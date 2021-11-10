@@ -9,17 +9,17 @@ public class Main {
 
         userService.createUsersTable();
 
-        userService.saveUser("Oleg", "Sedov", (byte) 23);
-        userService.saveUser("Ivan", "Petrov", (byte) 32);
-        userService.saveUser("Sergey", "Ivanov", (byte) 31);
-        userService.saveUser("Anton", "Smirnov", (byte) 44);
-        userService.getAllUsers();
-
-        System.out.println(userService.getAllUsers());
-
-        userService.cleanUsersTable();
-
-        userService.dropUsersTable();
+//        userService.saveUser("Oleg", "Sedov", (byte) 23);
+//        userService.saveUser("Ivan", "Petrov", (byte) 32);
+//        userService.saveUser("Sergey", "Ivanov", (byte) 31);
+//        userService.saveUser("Anton", "Smirnov", (byte) 44);
+//        userService.getAllUsers();
+//
+//        System.out.println(userService.getAllUsers());
+//
+//        userService.cleanUsersTable();
+//
+//        userService.dropUsersTable();
 
     }
 }
