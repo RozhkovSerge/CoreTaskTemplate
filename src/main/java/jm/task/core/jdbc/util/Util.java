@@ -41,7 +41,7 @@ public class Util {
                 settings.put(Environment.PASS, PASSWORD);
                 settings.put(Environment.DRIVER, DRIVER);
                 settings.put(Environment.DIALECT, DIALECT);
-                settings.put(Environment.HBM2DDL_AUTO, "create-drop");
+                settings.put(Environment.HBM2DDL_AUTO, HBM2DDL_AUTO);
                 settings.put(Environment.SHOW_SQL, true);
 
                 configuration.setProperties(settings);
@@ -56,8 +56,6 @@ public class Util {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
-
         }
         return sessionFactory;
     }
