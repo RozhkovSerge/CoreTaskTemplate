@@ -17,14 +17,22 @@ public class Util {
     }
 
     public static Util getInstance() throws SQLException {
-        if(instance == null) {
-            connection = DriverManager.getConnection(URL, USER, PASSWORD);
+        if (instance == null) {
             instance = new Util();
+            connection = instance.getConnection();
         }
         return instance;
     }
 
     public Connection getConnection() {
+        if (connection == null) {
+            try {
+                connection = DriverManager.getConnection(URL, USER, PASSWORD);
+                return connection;
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
         return connection;
     }
 }
