@@ -16,11 +16,16 @@ public class Util {
     public Util() {
     }
 
-    public static Util getInstance() throws SQLException {
-        if (instance == null) {
-            instance = new Util();
-            connection = instance.getConnection();
+    public static Util getInstance() {
+        try{
+            if (instance == null) {
+                instance = new Util();
+                connection = instance.getConnection();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
         return instance;
     }
 
